@@ -1,0 +1,48 @@
+.jssora02l, 
+.jssora02r, 
+.jssora02ldn, 
+.jssora02rdn {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    background: url("../plugins/slider-master/img/a02.png") no-repeat;
+    overflow: hidden;
+}
+
+.jssora02l {
+    background-position: -3px -33px;
+}
+
+.jssora02r {
+    background-position: -63px -33px;
+}
+
+.jssora02l:hover {
+    background-position: -123px -33px;
+}
+
+.jssora02r:hover {
+    background-position: -183px -33px;
+}
+
+.jssora02ldn {
+    background-position: -243px -33px;
+}
+
+.jssora02rdn {
+    background-position: -303px -33px;
+}
+.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
+{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    background: url("../plugins/slider-master/img/a10.png") center center no-repeat;
+    overflow: hidden;
+}
+.jssora21l { background-position: -3px -33px; }
+.jssora21r { background-position: -63px -33px; }
+.jssora21l:hover { background-position: -123px -33px; }
+.jssora21r:hover { background-position: -183px -33px; }
+.jssora21ldn { background-position: -243px -33px; }
+.jssora21rdn { background-position: -303px -33px; }
