@@ -28,7 +28,7 @@ h1{
 	font-size: 20px;
 	font-weight: 800;
 }
-h2{font-size: 18px;}
+h2{font-size: 20px;}
 h3{font-size: 16px;}
 h4{font-size: 14px;}
 h5{font-size: 12px;}
@@ -112,9 +112,10 @@ h6{font-size: 10px;}
 	display: block;  
 	line-height: 45px;
 	padding-left: 12px; 
-	color: #FFF; 
-	font-size: 1.6em; 
+	color: #000; 
+	font-size: 16px; 
 	text-decoration: none; 
+	font-weight: bold;
 }
 
 #slidingMenu ul li a:hover { 
@@ -134,7 +135,7 @@ h6{font-size: 10px;}
 #menu-title h5{
 	color: #FF8000;	
 	margin: 0px;	
-	padding: 6px 36px;
+	padding: 4px 36px;
 	font-weight: bold;	
 	margin-left: -11px;
 }
@@ -144,6 +145,31 @@ h6{font-size: 10px;}
 	padding: 10px 0px;
 	text-align: center;	
 	background-color: #000;
+}
+
+#logos{
+	width: 100%;
+	height: 80px;
+	background-color: #ECECEC;
+}
+
+#sep{
+	margin: 0px auto;
+	width: 25%;	
+}
+
+#sep img{
+	width: 100%;
+	height: 80px;
+}
+
+#ith{
+	float: right;
+}
+
+#ith img{
+	width: 50px;
+	height: 50px;
 }
 
 .fecha{
