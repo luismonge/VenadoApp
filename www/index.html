@@ -30,10 +30,10 @@
     <link rel="stylesheet" type="text/css" href="public/css/index.css" />  
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
     
-    <script type="text/javascript" src="public/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.js"></script>
     <script type="text/javascript" src="public/js/menu_nav.js"></script>    
-    <script type="text/javascript" src="public/plugins/slider-master/js/jssor.slider.min.js"></script>
 
+    <script type="text/javascript" src="public/plugins/slider-master/js/jssor.slider.min.js"></script>
     <script type="text/javascript" src="public/js/slider.js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/slider.css" />
 </head>
@@ -61,19 +61,11 @@
                 <div id="header">                    
                     <a href="javascript:void(0);" class="show-menu-button"></a>
                     <div id="menu-title">
-                        <h2>Técnologico Nacional de México</h2>
+                        <h2>Tecnológico Nacional de México</h2>
                         <h5>Campus Hermosillo</h5>
                     </div>
                 </div>
                 <div id="pageContent">
-                    <div id="pageContentHeader"> 
-                        <script>
-                            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-                            var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
-                            var f=new Date();
-                            document.write("<span class='fecha'>"+diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()+"</span>");
-                        </script>                       
-                    </div>
                     <div id="slider-content" style="margin: 0px;">
                         <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 360px;">
                             <!-- Slides Container -->
@@ -98,6 +90,14 @@
                             style="width: 55px; height: 55px; top: 180px; right: 8px;">
                             </span>
                         </div>
+                    </div>
+                    <div id="pageContentHeader"> 
+                        <script>
+                            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                            var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+                            var f=new Date();
+                            document.write("<span class='fecha'>"+diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()+"</span>");
+                        </script>                       
                     </div>
                     <div id="content">
                         <div id="title">

@@ -103,11 +103,25 @@ $(document).ready(function(){
 
 	//trigger the opening or closing action
 	$("a.show-menu-button").click(function () {
-		
+		abrir();
+
+	});
+
+	function abrir(){
 		var pagePosition = page.css('left');
 		
 		if(pagePosition == "0px") {
 			openMenu();
+		}
+		else { 
+			closeMenu(); 
+		}
+	}
+
+	$("#pageContent").click(function(){
+		var pagePosition = page.css('left');
+		if(pagePosition == "0px") {
+			
 		}
 		else { 
 			closeMenu(); 
