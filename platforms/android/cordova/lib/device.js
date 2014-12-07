@@ -48,7 +48,11 @@ module.exports.list = function() {
  * and launches it.
  * Returns a promise.
  */
+<<<<<<< HEAD
 module.exports.install = function(target, buildResults) {
+=======
+module.exports.install = function(target) {
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     var launchName;
     return this.list()
     .then(function(device_list) {
@@ -56,11 +60,16 @@ module.exports.install = function(target, buildResults) {
             return Q.reject('ERROR: Failed to deploy to device, no devices found.');
 
         // default device
+<<<<<<< HEAD
         target = target || device_list[0];
+=======
+        target = typeof target !== 'undefined' ? target : device_list[0];
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
 
         if (device_list.indexOf(target) < 0)
             return Q.reject('ERROR: Unable to find target \'' + target + '\'.');
 
+<<<<<<< HEAD
         return build.detectArchitecture(target)
         .then(function(arch) {
             var apk_path = build.findBestApkForArchitecture(buildResults, arch);
@@ -70,6 +79,18 @@ module.exports.install = function(target, buildResults) {
             var cmd = 'adb -s ' + target + ' install -r "' + apk_path + '"';
             return exec(cmd);
         });
+=======
+        var apk_path;
+        if (typeof process.env.DEPLOY_APK_ARCH == 'undefined') {
+            apk_path = build.get_apk();
+        } else {
+            apk_path = build.get_apk(null, process.env.DEPLOY_APK_ARCH);
+        }
+        launchName = appinfo.getActivityName();
+        console.log('Installing app on device...');
+        var cmd = 'adb -s ' + target + ' install -r "' + apk_path + '"';
+        return exec(cmd);
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     }).then(function(output) {
         if (output.match(/Failure/)) return Q.reject('ERROR: Failed to install apk to device: ' + output);
 

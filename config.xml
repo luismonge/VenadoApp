@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <widget id="org.venado.App" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+=======
+<widget id="org.venado.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     <name>VenadoApp</name>
     <description>
         Hello World sample application that responds to the deviceready event.

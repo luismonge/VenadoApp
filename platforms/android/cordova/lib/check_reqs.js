@@ -100,8 +100,12 @@ module.exports.check_java = function() {
                     });
                 } else {
                     // See if we can derive it from javac's location.
+<<<<<<< HEAD
                     // fs.realpathSync is require on Ubuntu, which symplinks from /usr/bin -> JDK
                     var maybeJavaHome = path.dirname(path.dirname(fs.realpathSync(javacPath)));
+=======
+                    var maybeJavaHome = path.dirname(path.dirname(javacPath));
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
                     if (fs.existsSync(path.join(maybeJavaHome, 'lib', 'tools.jar'))) {
                         process.env['JAVA_HOME'] = maybeJavaHome;
                     } else {

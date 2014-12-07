@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>CordovaApp-CordovaLib</name>
@@ -31,3 +32,6 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 </projectDescription>
+=======
+<?xml version="1.0" encoding="UTF-8"?><projectDescription><name>VenadoApp-CordovaLib</name></projectDescription>
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348

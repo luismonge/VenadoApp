@@ -1,5 +1,9 @@
 // Platform: android
+<<<<<<< HEAD
 // 8ca0f3b2b87e0759c5236b91c80f18438544409c
+=======
+// 3.6.3
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
 /*
  Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements.  See the NOTICE file
@@ -19,7 +23,11 @@
  under the License.
 */
 ;(function() {
+<<<<<<< HEAD
 var PLATFORM_VERSION_BUILD_LABEL = '3.6.4';
+=======
+var CORDOVA_JS_BUILD_LABEL = '3.6.3';
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
 // file: src/scripts/require.js
 
 /*jshint -W079 */
@@ -175,8 +183,12 @@ function createEvent(type, data) {
 var cordova = {
     define:define,
     require:require,
+<<<<<<< HEAD
     version:PLATFORM_VERSION_BUILD_LABEL,
     platformVersion:PLATFORM_VERSION_BUILD_LABEL,
+=======
+    version:CORDOVA_JS_BUILD_LABEL,
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     platformId:platform.id,
     /**
      * Methods to add/remove your own addEventListener hijacking on document + window.
@@ -1184,6 +1196,7 @@ function replaceNavigator(origNavigator) {
         for (var key in origNavigator) {
             if (typeof origNavigator[key] == 'function') {
                 newNavigator[key] = origNavigator[key].bind(origNavigator);
+<<<<<<< HEAD
             } else {
                 (function(k) {
                         Object.defineProperty(newNavigator, k, {
@@ -1194,6 +1207,8 @@ function replaceNavigator(origNavigator) {
                             enumerable: true
                         });
                     })(key);
+=======
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
             }
         }
     }
@@ -1313,6 +1328,7 @@ function replaceNavigator(origNavigator) {
         for (var key in origNavigator) {
             if (typeof origNavigator[key] == 'function') {
                 newNavigator[key] = origNavigator[key].bind(origNavigator);
+<<<<<<< HEAD
             } else {
                 (function(k) {
                         Object.defineProperty(newNavigator, k, {
@@ -1323,6 +1339,8 @@ function replaceNavigator(origNavigator) {
                             enumerable: true
                         });
                     })(key);
+=======
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
             }
         }
     }

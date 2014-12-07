@@ -283,7 +283,11 @@ module.exports.create_image = function(name, target) {
  * If no started emulators are found, error out.
  * Returns a promise.
  */
+<<<<<<< HEAD
 module.exports.install = function(target, buildResults) {
+=======
+module.exports.install = function(target) {
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     var self = this;
     return this.list_started()
     .then(function(emulator_list) {
@@ -292,11 +296,16 @@ module.exports.install = function(target, buildResults) {
         }
 
         // default emulator
+<<<<<<< HEAD
         target = target || emulator_list[0];
+=======
+        target = typeof target !== 'undefined' ? target : emulator_list[0];
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
         if (emulator_list.indexOf(target) < 0) {
             return Q.reject('Unable to find target \'' + target + '\'. Failed to deploy to emulator.');
         }
 
+<<<<<<< HEAD
         return build.detectArchitecture(target)
         .then(function(arch) {
             var apk_path = build.findBestApkForArchitecture(buildResults, arch);
@@ -304,6 +313,11 @@ module.exports.install = function(target, buildResults) {
             console.log('Using apk: ' + apk_path);
             return exec('adb -s ' + target + ' install -r "' + apk_path + '"');
         });
+=======
+        console.log('Installing app on emulator...');
+        var apk_path = build.get_apk();
+        return exec('adb -s ' + target + ' install -r "' + apk_path + '"');
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     }).then(function(output) {
         if (output.match(/Failure/)) {
             return Q.reject('Failed to install apk to emulator: ' + output);

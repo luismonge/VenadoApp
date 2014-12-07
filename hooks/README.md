@@ -20,6 +20,7 @@
 -->
 # Cordova Hooks
 
+<<<<<<< HEAD
 Cordova Hooks represent special scripts which could be added by application and plugin developers or even by your own build system  to customize cordova commands. Hook scripts could be defined by adding them to the special predefined folder (`/hooks`) or via configuration files (`config.xml` and `plugin.xml`) and run serially in the following order: 
 * Application hooks from `/hooks`;
 * Application hooks from `config.xml`;
@@ -31,6 +32,18 @@ __Note__: `.cordova/hooks` directory is also supported for backward compatibilit
 
 ## Supported hook types
 The following hook types are supported:
+=======
+This directory may contain scripts used to customize cordova commands. This
+directory used to exist at `.cordova/hooks`, but has now been moved to the
+project root. Any scripts you add to these directories will be executed before
+and after the commands corresponding to the directory name. Useful for
+integrating your own build systems or integrating with version control systems.
+
+__Remember__: Make your scripts executable.
+
+## Hook Directories
+The following subdirectories will be used for hooks:
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
 
     after_build/
     after_compile/
@@ -43,7 +56,10 @@ The following hook types are supported:
     after_plugin_ls/
     after_plugin_rm/
     after_plugin_search/
+<<<<<<< HEAD
     after_plugin_install/   <-- Plugin hooks defined in plugin.xml are executed exclusively for a plugin being installed
+=======
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     after_prepare/
     after_run/
     after_serve/
@@ -58,13 +74,17 @@ The following hook types are supported:
     before_plugin_ls/
     before_plugin_rm/
     before_plugin_search/
+<<<<<<< HEAD
     before_plugin_install/   <-- Plugin hooks defined in plugin.xml are executed exclusively for a plugin being installed
     before_plugin_uninstall/   <-- Plugin hooks defined in plugin.xml are executed exclusively for a plugin being uninstalled
+=======
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     before_prepare/
     before_run/
     before_serve/
     pre_package/ <-- Windows 8 and Windows Phone only.
 
+<<<<<<< HEAD
 ## Ways to define hooks
 ### Via '/hooks' directory
 To execute custom action when corresponding hook type is fired, use hook type as a name for a subfolder inside 'hooks' directory and place you script file here, for example:
@@ -175,6 +195,11 @@ For compatibility reasons hook files specified via `/hooks` folders are run via 
 ### Non-javascript
 
 Non-javascript scripts are run via Node child_process spawn from the project's root directory and have the root directory passes as the first argument. All other options are passed to the script using environment variables:
+=======
+## Script Interface
+
+All scripts are run from the project's root directory and have the root directory passes as the first argument. All other options are passed to the script using environment variables:
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
 
 * CORDOVA_VERSION - The version of the Cordova-CLI.
 * CORDOVA_PLATFORMS - Comma separated list of platforms that the command applies to (e.g.: android, ios).
@@ -194,3 +219,7 @@ cross-platform. Some good examples are shown here:
 Also, note that even if you are working on Windows, and in case your hook scripts aren't bat files (which is recommended, if you want your scripts to work in non-Windows operating systems) Cordova CLI will expect a shebang line as the first line for it to know the interpreter it needs to use to launch the script. The shebang line should match the following example:
 
     #!/usr/bin/env [name_of_interpreter_executable]
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348

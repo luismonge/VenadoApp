@@ -4,6 +4,7 @@
         "uninstalled": []
     },
     "config_munge": {
+<<<<<<< HEAD
         "files": {
             "undefined": {
                 "parents": {
@@ -110,5 +111,10 @@
             "PACKAGE_NAME": "org.venado.App"
         }
     },
+=======
+        "files": {}
+    },
+    "installed_plugins": {},
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
     "dependent_plugins": {}
 }

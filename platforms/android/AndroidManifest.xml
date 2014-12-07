@@ -1,13 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <manifest android:hardwareAccelerated="true" android:versionCode="10000" android:versionName="1.0.0" package="org.venado.App" xmlns:android="http://schemas.android.com/apk/res/android">
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="CordovaApp" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize">
+=======
+<manifest android:hardwareAccelerated="true" android:versionCode="10000" android:versionName="1.0.0" package="org.venado.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="VenadoApp" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize">
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
             <intent-filter android:label="@string/launcher_name">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+<<<<<<< HEAD
             <intent-filter>
                 <action android:name="org.venado.App.MESSAGE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -36,4 +45,9 @@
     <permission android:name="org.venado.App.permission.C2D_MESSAGE" android:protectionLevel="signature" />
     <uses-permission android:name="org.venado.App.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+=======
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="19" />
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
 </manifest>
