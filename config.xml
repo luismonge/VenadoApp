@@ -8,7 +8,7 @@
         PhoneGap Team
     </author>
     <content src="index.html" />    
-    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
+    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.4.1"  />
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="portrait" />
