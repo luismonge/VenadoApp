@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <widget id="org.venado.App" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+=======
+<<<<<<< HEAD
+<widget id="org.venado.App" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+=======
+<widget id="org.venado.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+>>>>>>> d5e97e9ce4dc9873f6bdcf0cdaf1faa1ae6c3348
+>>>>>>> 4c5e33aacc430753f5ee69f6315fd2f9ce97c4ed
     <name>VenadoApp</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -7,7 +15,12 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
+<<<<<<< HEAD
     <content src="index.html" />    
+=======
+    <content src="index.html" />
+    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
+>>>>>>> 4c5e33aacc430753f5ee69f6315fd2f9ce97c4ed
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="default" />
@@ -24,7 +37,10 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
+<<<<<<< HEAD
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
+=======
+>>>>>>> 4c5e33aacc430753f5ee69f6315fd2f9ce97c4ed
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
