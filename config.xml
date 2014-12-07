@@ -18,7 +18,7 @@
 <<<<<<< HEAD
     <content src="index.html" />    
 =======
-    <content src="index.html" />
+    <content src="www/index.html" />
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
 >>>>>>> 4c5e33aacc430753f5ee69f6315fd2f9ce97c4ed
     <preference name="permissions" value="none" />
