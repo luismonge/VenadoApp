@@ -207,7 +207,7 @@ h6{font-size: 10px;}
 
 .newsText{
 	font-size: 14px;
-	text-align: justify;
+	text-align: left;
 	width: 100%;
 	float: left;
 }
