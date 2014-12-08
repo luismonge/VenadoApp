@@ -144,23 +144,23 @@ h6{font-size: 10px;}
 	margin: 0px auto;	
 	padding: 5px 0px;
 	text-align: center;	
-	background-color: #000;
+	background-color: #222;
 }
 
 #logos{
 	width: 100%;
-	height: 80px;
-	margin: 15px 0px;
+	height: 50px;
+	margin: 10px 0px;
 	background-color: #ECECEC;
 }
 
 #sep{
-	text-align: center;
+	float: left;
 }
 
 #sep img{
-	width: 250px;
-	height: 80px;
+	width: 180px;
+	height: 50px;
 }
 
 #ith{
@@ -170,6 +170,7 @@ h6{font-size: 10px;}
 #ith img{
 	width: 50px;
 	height: 50px;
+	margin-right: 15px;
 }
 
 .fecha{
@@ -188,30 +189,59 @@ h6{font-size: 10px;}
 	padding: 10px 0px;
 }
 
-.news{
-	margin: 20px;
+.news{	
+	margin: 15px 0px;
 }
 
 .newsTitle{
-	text-align: center;	
-	margin-bottom: 5px;
+	text-align: center;		
+	padding: 5px;
+	background-color: #FFF;
 }
 .newsImg{
 	text-align: center;	
-	width: 30%;
+	width: 40%;
 	float: left;
 }
 
-.newsImg img{
-	width: 100%;
+.newsText img{	
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin: 5px;
 }
 
 .newsText{
 	font-size: 12px;
 	text-align: justify;
-	width: 60%;
-	float: right;
+	width: 100%;
+	float: left;
 }
+.newsMore{
+	width: 100%;
+}
+
+.date{
+	width: 100%;
+	text-align: center;
+	font: 10px bold Helvetica, Arial;
+	padding: 5px;
+}
+
+.news .more{
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+
+.newsMore .more button{
+	background-color: #006600;
+	padding: 3px;
+	border: none;
+	border-radius: 10px;
+	color: #FFF;
+}
+
 .clear{
 	clear: both;
 }
