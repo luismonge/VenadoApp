@@ -48,7 +48,6 @@ function registerPushwooshAndroid() {
     pushNotification.registerDevice(
         function(token)
         {
-            alert(token);
             //callback when pushwoosh is ready
             onPushwooshAndroidInitialized(token);
         },
