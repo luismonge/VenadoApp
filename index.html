@@ -27,31 +27,29 @@
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Hello World</title>
-    <link rel="stylesheet" type="text/css" href="public/css/index.css" />  
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />  
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     
-    <script type="text/javascript" src="public/js/jquery.js"></script>
-    <script type="text/javascript" src="public/js/menu_nav.js"></script>    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/menu_nav.js"></script>    
 
-    <script type="text/javascript" src="public/plugins/slider-master/js/jssor.slider.min.js"></script>
-    <script type="text/javascript" src="public/js/slider.js"></script>    
-    <link rel="stylesheet" type="text/css" href="public/css/slider.css" />
-    <script type="text/javascript">
-
-    </script>
+    <script type="text/javascript" src="plugins/slider-master/js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>    
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
 </head>
-    <body onload="init();">
+    <body>
         <div id="slidingMenu">
             <div id="slidingMenuContent">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="">Residencias</a></li>
-                    <li><a href="vistas/Q8/q8.html">Servicio Social</a></li>
-                    <li><a href="#">Moodle</a></li>
-                    <li><a href="#">Q8</a></li>
-                    <li><a href="#">Extraescolares</a></li>
-                    <li><a href="#">Inglés</a></li>
-                    <li><a href="#">Posgrado</a></li>
+                    <li><a href="residencias.html">Residencias</a></li>
+                    <li><a href="servicio_social.html">Servicio Social</a></li>
+                    <li><a href="titulacion.html">Titulación</a></li>
+                    <li><a href="moodle.html">Moodle</a></li>
+                    <li><a href="q8.html">Q8</a></li>
+                    <li><a href="extraescolares.html">Extraescolares</a></li>
+                    <li><a href="ingles.html">Inglés</a></li>
+                    <li><a href="posgrado.html">Posgrado</a></li>
                 </ul>
             </div>
         </div>
@@ -60,29 +58,40 @@
                 <div id="header">                    
                     <a href="javascript:void(0);" class="show-menu-button"></a>
                     <div id="menu-title">
-                        <h2>Tecnológico Nacional de México</h2>
+                        <h3>Tecnológico Nacional de México</h3>
                         <h5>Instituto Tecnológico de Hermosillo</h5>
                     </div> 
                 </div>
+
                 <div id="pageContent">
+                    <div id="logos">
+                        <div id="sep">
+                            <a href="http://www.sep.gob.mx/" target="_top">
+                                <img class="logosep" src="img/logosep.png" title="Secretaría de Educación Pública">
+                            </a>    
+                        </div>     
+                         <div id="ith">
+                            <img src="img/logoitp.png" width="61" height="62" class="logoitp" title="Instituto Tecnológico de Hermosillo">
+                        </div>                              
+                    </div>   
                     <div id="slider-content" style="margin: 0px;">
                         <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 360px;">
                             <!-- Slides Container -->
                             <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 960px; height:360px;">               
                                 <div>                    
-                                    <img u="image" src="public/img/evaluacion-docente.png"/>
+                                    <img u="image" src="img/evaluacion-docente.png"/>
                                 </div>
                                 <div>                                       
-                                    <img u="image" src="public/img/campus-france.png"/>                    
+                                    <img u="image" src="img/campus-france.png"/>                    
                                 </div>
                                 <div>                                       
-                                    <img u="image" src="public/img/1000-jovenes-ciencia.png"/>                    
+                                    <img u="image" src="img/1000-jovenes-ciencia.png"/>                    
                                 </div>
                                 <div>                                       
-                                    <img u="image" src="public/img/beca-movilidad.png"/>                    
+                                    <img u="image" src="img/beca-movilidad.png"/>                    
                                 </div>
                                 <div>                                       
-                                    <img u="image" src="public/img/programa-becas.png"/>                    
+                                    <img u="image" src="img/programa-becas.png"/>                    
                                 </div>
                             </div>
 
@@ -104,17 +113,9 @@
                             document.write("<span class='fecha'>"+diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()+"</span>");
                         </script>                       
                     </div>
-                    <div id="logos">
-                        <div id="sep">
-                            <a href="http://www.sep.gob.mx/" target="_top">
-                                <img class="logosep" src="public/img/logosep.png" title="Secretaría de Educación Pública">
-                            </a>    
-                        </div>     
-                         <div id="ith">
-                            <img src="public/img/logoitp.png" width="61" height="62" class="logoitp" title="Instituto Tecnológico de Hermosillo">
-                        </div>                              
-                    </div>                    
+                 
                     <div id="content">
+                        <h1>Noticias Recientes</h1>
                         <div class="news">
                             <div class="newsTitle">
                                 <h2>SOLEMNE IZAMIENTO DE BANDERA NACIONAL EN ITH</h2>
@@ -123,7 +124,7 @@
                                 <span>5 Diciembre de 2014</span>
                             </div>                   
                             <div class="newsText">
-                                <img src="public/img/honores-diciembre.jpg">
+                                <img src="img/honores-diciembre.jpg">
                                 Con la presencia de la Banda de Guerra del 24 Batallón de Infantería de la Cuarta Zona Militar, se llevó a cabo el izamiento de la Bandera Nacional
                             </div>
                             <div class="newsMore">
@@ -141,7 +142,7 @@
                                 <span>5 Diciembre de 2014</span>
                             </div>                   
                             <div class="newsText">
-                                <img src="public/img/auto-show-6.JPG">
+                                <img src="img/auto-show-6.JPG">
                                 Ingeniería en Gestión Empresarial (IGE) presentaron ocho prototipos de automóviles diseñados por ellos mismos
                             </div>
                             <div class="newsMore">
@@ -159,7 +160,7 @@
                                 <span>5 Diciembre de 2014</span>
                             </div>                   
                             <div class="newsText">
-                                <img src="public/img/1000-jovenes-ciencia.jpg">
+                                <img src="img/1000-jovenes-ciencia.jpg">
                                 El Tecnológico Nacional de México (TNM) y el Consejo Nacional de Ciencia y Tecnología (CONACYT) dieron a conocer el programa “1000 Jóvenes en la Ciencia”
                             </div>
                             <div class="newsMore">
@@ -177,7 +178,7 @@
                                 <span>5 Diciembre de 2014</span>
                             </div>                   
                             <div class="newsText">
-                                <img src="public/img/impresora-3d.jpg">
+                                <img src="img/impresora-3d.jpg">
                                 Un estudiante de ingeniería industrial del Instituto Tecnológico de Hermosillo (ITH) y uno de Sistemas de Información de la Universidad de Sonora (Unison) presentaron su diseño propia de una impresora 3D
                             </div>
                             <div class="newsMore">
@@ -188,9 +189,17 @@
                             <div class="clear"></div>
                         </div>
                     </div>
+                    <div id="footer">
+                        <p>
+                            Instituto Tecnológico de Hermosillo, www.ith.mx, webmaster@ith.mx <br>
+                            Ave. Tecnológico y Periférico Poniente S/N C.P. 83170 Colonia Sahuaro,  Hemosillo Sonora, México<br>
+                            Teléfonos: (01 662) 2 60 65 00<br>
+                            Copyright © 2013 Instituto Tecnológico de Hermosillo. Algunos derechos reservados.
+                        </p>
+                    </div>
                     <script type="text/javascript" src="phonegap.js"></script>
-                    <script type="text/javascript" src="public/js/notificaciones.js"></script>                    
-                    <script type="text/javascript" src="public/js/index.js"></script>
+                    <script type="text/javascript" src="js/notificaciones.js"></script>                    
+                    <script type="text/javascript" src="js/index.js"></script>
                     <script type="text/javascript">
                         app.initialize();
                     </script>
