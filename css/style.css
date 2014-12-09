@@ -277,7 +277,7 @@ iframe{
 
 
 #content-noIndex{
-	padding: 40px;
+	padding: 10px 20px;
 	font: 15px Helvetica, Arial;
 	text-align: justify;
 	color: #8A92A4;
@@ -306,7 +306,7 @@ iframe{
 
 #footer{
 	padding: 20px 0px;
-	background-color: #CDCDCD;
+	background-color: #DFDFDF;
 	text-align: center;
 	color: #5A5A5A;
 }
